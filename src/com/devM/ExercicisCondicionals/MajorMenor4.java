@@ -2,7 +2,6 @@ package com.devM.ExercicisCondicionals;
 
 import java.util.Scanner;
 
-
 public class MajorMenor4 {
 
 	public static void main(String[] args) {
@@ -41,12 +40,17 @@ public class MajorMenor4 {
 			if (num3Input.hasNextInt()) {
 				num3 = num3Input.nextInt();
 
-				if (num1 < num2 && num1 < num3) {
+				if (num1 == num2 && num1 == num3) {
+					System.out.println("\n+------------------------------------------------------------------------+");
+					System.out.println("    Els números (" + num1 + ", " + num2 + ", " + num3 + ") són iguals");
+					System.out.println("+------------------------------------------------------------------------+");
+
+				} else if (num1 <= num2 && num1 <= num3) {
 					System.out.println("\n+------------------------------------------------------------------------+");
 					System.out.println(
 							"    El menor número dels 3 (" + num1 + ", " + num2 + ", " + num3 + ") és: " + num1);
 					System.out.println("+------------------------------------------------------------------------+");
-				} else if (num2 < num3 && num2 < num1) {
+				} else if (num2 <= num3 && num2 <= num1) {
 					System.out.println("\n+------------------------------------------------------------------------+");
 					System.out.println(
 							"    El menor número dels 3 (" + num1 + ", " + num2 + ", " + num3 + ") és: " + num2);
@@ -58,11 +62,13 @@ public class MajorMenor4 {
 					System.out.println("+------------------------------------------------------------------------+");
 				}
 
-				if (num1 > num2 && num1 > num3) {
+				if (num1 == num2 && num1 == num3) {
+				
+				} else if (num1 >= num2 && num1 >= num3) {
 					System.out.println(
 							"    El major número dels 3 (" + num1 + ", " + num2 + ", " + num3 + ") és: " + num1);
 					System.out.println("+------------------------------------------------------------------------+");
-				} else if (num2 > num3 && num2 > num1) {
+				} else if (num2 >= num3 && num2 >= num1) {
 					System.out.println(
 							"    El major número dels 3 (" + num1 + ", " + num2 + ", " + num3 + ") és: " + num2);
 					System.out.println("+------------------------------------------------------------------------+");
